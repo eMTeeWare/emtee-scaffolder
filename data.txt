@@ -1,1 +1,5 @@
-hans,wurst
+show;disc;bluray;Star Trek Prodigy;2021;02;20
+movie;stream;apple;Challengers;2024
+movie;stream;amazon;The Zone of Interest;2023
+#movie;disc;dvd;Challengers;2024
+show;disc;uhd;Daredevil Born Again;2025;1;9
