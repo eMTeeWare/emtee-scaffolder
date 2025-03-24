@@ -17,7 +17,7 @@ func main() {
 
 	fmt.Println("Application is running in folder:", workingDirectory)
 
-	basepath := workingDirectory
+	basePath := workingDirectory
 
 	// Open the data file
 	file, err := os.Open("data.txt")
@@ -51,7 +51,7 @@ func main() {
 			name := parts[3]
 			year := parts[4]
 
-			createStructure(basepath, contentType, mediaType, mediaProvider, name, year)
+			createStructure(basePath, contentType, mediaType, mediaProvider, name, year)
 
 		case "show":
 			fmt.Println("Shows not yet supported", line)
