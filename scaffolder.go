@@ -20,8 +20,17 @@ func main() {
 
 	basePath := workingDirectory
 
+	// Check if a file was dropped
+	if len(os.Args) < 2 {
+		fmt.Println("No data file specified. Please drag and drop a file onto this application.")
+		return
+	}
+
+	// The first argument (os.Args[0]) is the application path, so file path starts at os.Args[1]
+	dataFilePath := os.Args[1]
+
 	// Open the data file
-	file, err := os.Open("data.txt")
+	file, err := os.Open(dataFilePath)
 	if err != nil {
 		fmt.Println("Error opening file:", err)
 		return
